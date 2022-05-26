@@ -106,9 +106,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { "Content-type": "application/json" });
     res.end(JSON.stringify(db));
   } else {
-    res.writeHead(404, {
-      "Content-type": "text/html",
-    });
+    res.writeHead(404, { "Content-type": "text/html" });
     res.end("<h1>404 Not Found</h1>");
   }
 });
